@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Travel Form</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Sevillana&display=swap" rel="stylesheet">
+</head>
+<body>
+    <img src="PHP_BG.jpg"  class="bg" alt="sit">
+    <div class="container">
+        <h1>Welcome to SIT Coorg Trip form</h1>
+        <p>Enter your details and submit this form to confirm your participation in the trip</p>
+        <? php 
+           echo "<p class="submit"> Thanks for submitting your form. We are happy to see you joining us for coorg trip</p>";
+        ?>
+        <form action="index.php" method="post">
+            <input type="text" name="name" id="name" placeholder="Enter Your Name">
+            <input type="text" name="usn" id="usn" placeholder="Enter Your USN">
+            <input type="text" name="Branch" id="branch" placeholder="Enter Your Branch">
+            <input type="email" name="email" id="email" placeholder="Enter Your Email">
+            <input type="tel" name="tel" id="tel" placeholder="Enter Yor Phone number">
+            <textarea name="desc" id="desc" cols="10" rows="10" placeholder="Enter any otherinformation here"></textarea>
+            <button class="btn">submit</button>
+            
+
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
